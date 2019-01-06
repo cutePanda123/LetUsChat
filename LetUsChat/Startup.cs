@@ -45,6 +45,9 @@ namespace LetUsChat
                 options.AppId = Configuration["Authentication:Facebook:FacebookAuthenticationAppId"];
                 options.AppSecret = Configuration["Authentication:Facebook:FacebookAuthenticationAppSecret"];
             }).AddCookie();
+
+            services.AddSingleton(typeof(IUserTracker), typeof(UserTracker));
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,6 +65,12 @@ namespace LetUsChat
 
             app.UseStaticFiles();
             app.UseAuthentication();
+
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<ChatHub>("/chatHub");
+            });
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
