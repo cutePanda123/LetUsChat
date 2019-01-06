@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetUsChat", "LetUsChat\LetUsChat.csproj", "{94253050-826E-47A1-8C7D-385C3D4F838D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetUsChatTest", "LetUsChatTest\LetUsChatTest.csproj", "{942BC849-3741-4171-BF41-644CEE250F40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetUsChatTest", "LetUsChatTest\LetUsChatTest.csproj", "{942BC849-3741-4171-BF41-644CEE250F40}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2417A2A1-43EA-493A-8449-C77E7998A4F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{942BC849-3741-4171-BF41-644CEE250F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{942BC849-3741-4171-BF41-644CEE250F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{942BC849-3741-4171-BF41-644CEE250F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2417A2A1-43EA-493A-8449-C77E7998A4F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2417A2A1-43EA-493A-8449-C77E7998A4F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2417A2A1-43EA-493A-8449-C77E7998A4F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2417A2A1-43EA-493A-8449-C77E7998A4F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

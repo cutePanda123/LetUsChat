@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  letuschat:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "57688:80"
+    volumes:
+      - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+networks:
+  default:
+    external:
+      name: nat
